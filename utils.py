@@ -40,9 +40,7 @@ def get_toponym(geocode_result):
 
 
 def get_ll_from_geocode_response(toponym):
-    # Координаты центра топонима:
     toponym_coodrinates = toponym["Point"]["pos"]
-    # Долгота и широта:
     toponym_longitude, toponym_lattitude = toponym_coodrinates.split(" ")
     return toponym_longitude, toponym_lattitude
 
